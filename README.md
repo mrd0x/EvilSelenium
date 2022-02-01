@@ -66,7 +66,7 @@ The `/install` command will download the Chrome Driver and Selenium WebDriver wh
 
 **IMPORTANT:** The credentials module will **DELETE COOKIES** in order to steal credentials from autofill. Ideally, you should use the credentials module at the end if you want to export cookies.
 
-`/autorun` - I pre-built credential stealer templates for common websites. I'll continue to add more.
+`/autorun` - Prebuilt templates for common websites. I'll continue to add more.
 
 `/dynamicid` - Provide the login URL along with the username input field's ID and password field's ID. This is equivalent to document.getElementById().
 
