@@ -13,7 +13,7 @@ Easily extend the existing functionality to suit your needs (e.g. Download files
 
 # Note
 
-1. When this tool is run it will terminate any existing Chrome processes in order to be able to run with the user's Chrome profile which contains all passwords & sessions.
+1. When this tool is run it will terminate any existing Chrome processes in order to be able to run with the user's Chrome profile which has the passwords & active sessions.
 
 2. I built this tool in about a week & I didn't run as many tests as I should therefore there may be some bugs.
 
