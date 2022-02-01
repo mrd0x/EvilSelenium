@@ -98,4 +98,4 @@ These are additional modules I built to demonstrate what sort of actions you can
 
 # Example
 
-![Example](https://github.com/mrd0x/EvilSelenium/demo-1.png)
+![Example](https://github.com/mrd0x/EvilSelenium/blob/main/demo-1.png)
