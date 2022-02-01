@@ -102,7 +102,7 @@ These are additional modules I built to demonstrate what sort of actions you can
 	
 	EvilSelenium.exe /dynamicid https://www.hybrid-analysis.com/login login_email login_password
 	
-	EvilSelenium.exe /dynamicname https://instagram.com session_key session_password
+	EvilSelenium.exe /dynamicname https://linkedin.com session_key session_password
 
 # Demo
 
