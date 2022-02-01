@@ -72,7 +72,7 @@ The `/install` command will download the Chrome Driver and Selenium WebDriver wh
 
 `/dynamicname` - If the fields don't have IDs, provide the fields' name values. It will pick the first index of the name values. This is equivalent to document.getElementsByName()[0].value.
 
-`/dynamicname2` - Provide the fields' name values along with their index position. This is equivalent to document.getElementsByName()[x].value.
+`/dynamicname2` - Provide the fields' name values along with their index position. This is equivalent to document.getElementsByName()[x].value where x is the provided position.
 
 # Cookies Module
 
@@ -96,6 +96,14 @@ These are additional modules I built to demonstrate what sort of actions you can
 
 `/whatsapp` - Fetches Whatsapp messages if user is authenticated (BETA).
 
-# Example
+# Sample Commands
+	
+	EvilSelenium.exe /screenshot https://mail.google.com c:\users\mr.d0x\downloads
+	
+	EvilSelenium.exe /dynamicid https://www.hybrid-analysis.com/login login_email login_password
+	
+	EvilSelenium.exe /dynamicname https://instagram.com session_key session_password
+
+# Demo
 
 ![Example](https://github.com/mrd0x/EvilSelenium/blob/main/demo-1.png)
