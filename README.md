@@ -1,5 +1,5 @@
 # EvilSelenium
-EvilSelenium is a beta project that weaponizes <a href="https://www.selenium.dev/">Selenium</a> to abuse Chrome, specifically:
+EvilSelenium is a beta project that weaponizes <a href="https://www.selenium.dev/">Selenium</a> to abuse Chrome. The current features right now are:
 
 * Steal stored credentials (via autofill)
 * Steal cookies
