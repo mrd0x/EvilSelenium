@@ -1,5 +1,5 @@
 # EvilSelenium
-EvilSelenium is a beta project that weaponizes <a href="https://www.selenium.dev/">Selenium</a> to abuse Chrome. The current features right now are:
+EvilSelenium is a new project that weaponizes <a href="https://www.selenium.dev/">Selenium</a> to abuse Chrome. The current features right now are:
 
 * Steal stored credentials (via autofill)
 * Steal cookies
@@ -9,13 +9,15 @@ EvilSelenium is a beta project that weaponizes <a href="https://www.selenium.dev
 * Download & exfiltrate files
 * Add SSH keys to GitHub
 
-Easily extend the existing functionality to suit your needs (e.g. Download files from the user's GDrive/OneDrive).
+Or extend the existing functionality to suit your needs (e.g. Download files from the user's GDrive/OneDrive).
 
 # Note
 
 1. When this tool is run it will terminate any existing Chrome processes in order to be able to run with the user's Chrome profile which has the passwords & active sessions.
 
 2. I built this tool in about a week & I didn't run as many tests as I should therefore there may be some bugs.
+
+3. Selenium modules are not always stable. Due to the constant changes in websites some modules may occasionally break. I'll try my best to maintain the existing modules to ensure they work as intended but you've been warned.
 
 # Usage
 	
