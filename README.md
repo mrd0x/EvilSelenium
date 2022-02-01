@@ -9,7 +9,7 @@ EvilSelenium is a beta project that weaponizes <a href="https://www.selenium.dev
 * Download & exfiltrate files
 * Add SSH keys to GitHub
 
-Easily extend the existing functionality to suit your needs (e.g. Create resources on Azure, download files from GDrive/OneDrive).
+Easily extend the existing functionality to suit your needs (e.g. Download files from the user's GDrive/OneDrive).
 
 # Note
 
