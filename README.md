@@ -95,3 +95,7 @@ These are additional modules I built to demonstrate what sort of actions you can
 `/github` - Add your SSH key to Github if user is authenticated.
 
 `/whatsapp` - Fetches Whatsapp messages if user is authenticated (BETA).
+
+# Example
+
+![Example](https://github.com/mrd0x/EvilSelenium/demo-1.png)
