@@ -81,3 +81,11 @@ The `/install` command will download the Chrome Driver and Selenium WebDriver wh
 # Misc Modules
 
 These are additional modules I built to demonstrate what sort of actions you can do with Selenium.
+
+`/download` - Download a file & specify time to wait for the download. A non-executable file extension should be appended to the file before downloading to avoid Chrome's Safebrowsing prompt.
+`/exfil` - Uploads a file on filebin.net & specify the time to wait for the upload to complete. Once the upload is completed the file's download link is written.
+`/gmail` - Fetches emails from mail.google.com if user is authenticated. Max 50 emails.
+`/outlook` - Fetches emails from Outlook if user is authenticated.
+`/o365` - Fetches emails from O365 Outlook if user is authenticated.
+`/github` - Add your SSH key to Github if user is authenticated.
+`/whatsapp` - Fetches Whatsapp messages if user is authenticated (BETA).
