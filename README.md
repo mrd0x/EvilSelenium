@@ -11,15 +11,15 @@ EvilSelenium is a beta project that weaponizes <a href="https://www.selenium.dev
 
 Easily extend the existing functionality to suit your needs (e.g. Create resources on Azure, download files from GDrive/OneDrive).
 
-# READ PLEASE
+# Note
 
-**Existing Chrome processes are terminated when this tool runs in order to be able to access the user's Chrome profile.**
+1. When this tool is run it will terminate any existing Chrome processes in order to be able to run with the user's profile which contains all passwords & sessions.
 
-# READ PLEASE #2
-
-I built this tool in about a week & I didn't run as many tests as I should. I would highly advise running some tests first.
+2. I built this tool in about a week & I didn't run as many tests as I should therefore there may be some bugs.
 
 # Usage
+	
+	EvilSelenium.exe /?
 
     /help - Show this help menu.
 
@@ -64,15 +64,15 @@ The `/install` command will download the Chrome Driver and Selenium WebDriver wh
 
 # Credentials Module
 
-**IMPORTANT:** The credentials module will **DELETE COOKIES** and steal credentials from autofill. Ideally, you should use the credentials module at the end otherwise you would have to write code to sign back in.
+**IMPORTANT:** The credentials module will **DELETE COOKIES** in order to steal credentials from autofill. Ideally, you should use the credentials module at the end if you want to export cookies.
 
 `/autorun` - I pre-built credential stealer templates for common websites. I'll continue to add more.
 
-`dynamicid` - Provide the login URL along with the username input field's ID and password field's ID. This is equivalent to document.getElementById("password").value.
+`dynamicid` - Provide the login URL along with the username input field's ID and password field's ID. This is equivalent to document.getElementById().
 
-`dynamicname` - If the fields don't have IDs, provide the fields' name values. It will pick the first index of the name values. This is equivalent to document.getElementsByName("password")[0].value.
+`dynamicname` - If the fields don't have IDs, provide the fields' name values. It will pick the first index of the name values. This is equivalent to document.getElementsByName()[0].value.
 
-`dynamicname2` - Provide the fields' name values along with their index position. This is equivalent to document.getElementsByName("password")[x].value.
+`dynamicname2` - Provide the fields' name values along with their index position. This is equivalent to document.getElementsByName()[x].value.
 
 # Cookies Module
 
