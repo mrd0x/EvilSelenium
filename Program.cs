@@ -89,7 +89,7 @@ namespace EvilSelenium
                             WebsiteTemplates.InstagramExtract();
                             WebsiteTemplates.LastPassExtract();
                         }
-                        else
+                        if (choiceInt > 12)
                         {
                             Console.WriteLine("[-] Not found");
                             System.Environment.Exit(-1);
