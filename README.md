@@ -68,11 +68,11 @@ The `/install` command will download the Chrome Driver and Selenium WebDriver wh
 
 `/autorun` - I pre-built credential stealer templates for common websites. I'll continue to add more.
 
-`dynamicid` - Provide the login URL along with the username input field's ID and password field's ID. This is equivalent to document.getElementById().
+`/dynamicid` - Provide the login URL along with the username input field's ID and password field's ID. This is equivalent to document.getElementById().
 
-`dynamicname` - If the fields don't have IDs, provide the fields' name values. It will pick the first index of the name values. This is equivalent to document.getElementsByName()[0].value.
+`/dynamicname` - If the fields don't have IDs, provide the fields' name values. It will pick the first index of the name values. This is equivalent to document.getElementsByName()[0].value.
 
-`dynamicname2` - Provide the fields' name values along with their index position. This is equivalent to document.getElementsByName()[x].value.
+`/dynamicname2` - Provide the fields' name values along with their index position. This is equivalent to document.getElementsByName()[x].value.
 
 # Cookies Module
 
