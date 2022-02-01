@@ -109,3 +109,8 @@ These are additional modules I built to demonstrate what sort of actions you can
 # Demo
 
 ![Example](https://github.com/mrd0x/EvilSelenium/blob/main/demo-1.png)
+
+# Support
+
+* Follow me on twitter <a href="https://twitter.com/mrd0x">@mrd0x</a>
+* BTC Wallet: 38ApE9ciNHiXzEaQExLXdwM6TrEpz2wCUi (for coffee obviously)
