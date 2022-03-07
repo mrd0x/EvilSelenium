@@ -28,6 +28,9 @@ Or extend the existing functionality to suit your needs (e.g. Download files fro
     SETUP:
     /install - Install chromedriver & Selenium webdriver. Run this once.
 
+    GLOBAL: (accepted with every command)
+    /custom_browser [appdata_local_routing] - Use custom browser, Input should be the routing inside %appdatalocal% dir (e.g. "Microsoft\Edge")
+
     RECON:
     /enumsavedsites [out_path] - Check which websites have passwords saved via screenshot(s).
     /screenshot [website] [out_path] - Screenshot a given webpage.
@@ -57,6 +60,14 @@ The `/install` command will download the Chrome Driver and Selenium WebDriver wh
 **Tested on Windows 10, Chrome v97 & v90.**
 
 	EvilSelenium.exe /install
+
+# Global configuration
+By default EvilSelenium will try to use Google Chrome's User Data folder to retrieve data, but other [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) based browsers are supported as well.
+In order to use different Chrome based browser you should add the `/custom_browser` following the browser routing in the `%localappdata%` directory.
+Here are examples for a few common browsers (should be added to any CLI command):
+1. *Brave* - `/custom_browser BraveSoftware\Brave-Browser`
+2. *Microsoft Edge* - `/custom_browser Microsoft\Edge`
+3. *Vivaldi* - `/custom_browser Vivaldi`
 
 # Recon Module
 

