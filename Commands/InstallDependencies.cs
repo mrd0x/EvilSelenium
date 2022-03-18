@@ -43,7 +43,15 @@ namespace EvilSelenium.Commands
             Console.WriteLine("[+] Downloading chromedriver...");
 
             var client = new WebClient();
-            if (chromeVersion == "98")
+            if (chromeVersion == "100")
+            {
+                client.DownloadFile("https://chromedriver.storage.googleapis.com/100.0.4896.20/chromedriver_win32.zip", chromeDriverName);
+            }
+            else if (chromeVersion == "99")
+            {
+                client.DownloadFile("https://chromedriver.storage.googleapis.com/99.0.4844.51/chromedriver_win32.zip", chromeDriverName);
+            }
+            else if (chromeVersion == "98")
             {
                 client.DownloadFile("https://chromedriver.storage.googleapis.com/98.0.4758.48/chromedriver_win32.zip", chromeDriverName);
             }
