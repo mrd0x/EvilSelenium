@@ -1,5 +1,5 @@
 # EvilSelenium
-EvilSelenium is a new project that weaponizes <a href="https://www.selenium.dev/">Selenium</a> to abuse Chrome. The current features right now are:
+EvilSelenium is a new project that weaponizes <a href="https://www.selenium.dev/">Selenium</a> to abuse Chromium-based browsers. The current features right now are:
 
 * Steal stored credentials (via autofill)
 * Steal cookies
@@ -13,7 +13,7 @@ Or extend the existing functionality to suit your needs (e.g. Download files fro
 
 # Note
 
-1. When this tool is run it will terminate any existing Chrome processes in order to be able to run with the user's Chrome profile which has the passwords & active sessions.
+1. When this tool is run it will terminate any existing browser processes in order to be able to run with the user's browser profile which contains the passwords & active sessions.
 
 2. I built this tool in about a week & I didn't run as many tests as I should therefore there may be some bugs.
 
@@ -55,7 +55,7 @@ Or extend the existing functionality to suit your needs (e.g. Download files fro
 
 # Setup
 
-The `/install` command will download the Chrome Driver and Selenium WebDriver which are the necessary requirements. EvilSelenium will work on Chrome versions 98-90.
+The `/install` command will download the Chrome Driver and Selenium WebDriver which are the necessary requirements. EvilSelenium will work on Chrome versions 100-90.
 
 **Tested on Windows 10, Chrome v97 & v90.**
 
